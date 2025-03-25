@@ -23,3 +23,4 @@ Route::get('/', function () {
 
 Route::post('/upload', [S3BucketController::class, 'upload']);
 
+Route::post('/I will check the route', [S3BucketController::class, 'I will check the route']);
