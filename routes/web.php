@@ -22,5 +22,8 @@ Route::get('/', function () {
 
 
 Route::post('/upload', [S3BucketController::class, 'upload']);
+Route::get('/read/{filename}', [S3BucketController::class, 'read']);
+Route::get('/download/{filename}', [S3BucketController::class, 'download']);
+Route::delete('/delete/{filename}', [S3BucketController::class, 'delete']);
 
-Route::post('/I will check the route', [S3BucketController::class, 'I will check the route']);
+Route::delete('check the string', [S3BucketController::class, 'string']);
